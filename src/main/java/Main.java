@@ -14,9 +14,10 @@ public class Main {
 
         RangeAdder adder1 = new RangeAdder(start1, end1);
         adder1.start();
-        adder1.join();
+
         RangeAdder adder2 = new RangeAdder(start2, end2);
         adder2.start();
+        adder1.join();
         adder2.join();
         long partialSum1 = adder1.getSum();
 //        System.out.println("P1 "+partialSum1);
